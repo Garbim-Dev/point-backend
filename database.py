@@ -10,7 +10,6 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 Base = declarative_base()
 
-# Função para garantir que a conexão abra e feche corretamente a cada requisição
 def get_db():
     db = SessionLocal()
     try:
