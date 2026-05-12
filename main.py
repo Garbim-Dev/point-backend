@@ -402,3 +402,4 @@ def deletar_alocacao(id: int, db: Session = Depends(get_db)):
     except Exception as e:
         db.rollback()
         raise HTTPException(status_code=400, detail=str(e))
+    
